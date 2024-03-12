@@ -5,7 +5,7 @@ swap_size_mb = 32768
 
 [mounts]
 source = "data"
-destination = "/root"
+destination = "/stable-diffusion-webui"
 
 [[services]]
 internal_port = 7860
