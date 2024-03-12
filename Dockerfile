@@ -8,4 +8,4 @@ WORKDIR /stable-diffusion-webui-forge
 
 ENTRYPOINT nvidia-smi
 
-CMD ./webui.sh -f --listen
+CMD ["sh", "-c", "./webui.sh -f --listen"]
