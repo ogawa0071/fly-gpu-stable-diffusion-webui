@@ -5,7 +5,7 @@ swap_size_mb = 32768
 
 [mounts]
 source = "data"
-destination = "/stable-diffusion-webui"
+destination = "/app"
 
 [[services]]
 internal_port = 7860
@@ -17,8 +17,3 @@ min_machines_running = 0
 [[services.ports]]
 handlers = ["http"]
 port = 80
-force_https = true
-
-[[services.ports]]
-handlers = ["tls", "http"]
-port = 443

@@ -1,0 +1,9 @@
+app = "stable-diffusion-webui-cloudflared"
+primary_region = "ord"
+vm.size = "shared-cpu-1x"
+
+[build]
+image = "cloudflare/cloudflared:latest"
+
+[experimental]
+cmd = ["tunnel", "--no-autoupdate", "run"]
